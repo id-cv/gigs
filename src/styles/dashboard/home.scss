@@ -1,0 +1,11 @@
+.homepage_container {
+  padding: 48px 24px;
+  width: 100%;
+  min-height: 89vh;
+  background: $color-white;
+
+  @include smScreen {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

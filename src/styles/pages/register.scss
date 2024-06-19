@@ -1,0 +1,92 @@
+.register_page_container {
+  @include gridColumns(1fr 1fr, 0px);
+  height: 100vh;
+
+  @include llgScreen {
+    @include gridColumns(220px 1fr, 0px);
+  }
+
+  @include mmdScreen {
+    display: block;
+  }
+
+  .side {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    &.left_side {
+      @include flexPosition(center, center);
+      flex-direction: column;
+      background: linear-gradient($color-gradient-01, $color-gradient-02);
+
+      @include mmdScreen {
+        display: none;
+      }
+
+      .animated_text {
+        position: absolute;
+        left: -10%;
+        top: 8%;
+        width: 110%;
+        transform: rotate(-10deg);
+
+        @include llgScreen {
+          left: -15%;
+          top: -10%;
+          width: 500%;
+          transform: rotate(-15deg);
+        }
+      }
+
+      .occupations {
+        width: 100%;
+        height: 50vh;
+        background-image: url("../../assets/svg/occupations.svg");
+        background-position: left;
+        background-size: cover;
+      }
+    }
+
+    &.right_side {
+      @include sectionPadding;
+      @include flexPosition(space-between, center);
+      flex-direction: column;
+      padding-top: 48px;
+      padding-bottom: 48px;
+      height: inherit;
+
+      .top {
+        width: 100%;
+        height: 40px;
+
+        .icon {
+          @include circle(40px, 40px);
+          @include flexPosition(center, center);
+          margin: 0 0 0 auto;
+          box-shadow: $box-shadow;
+        }
+      }
+
+      .form_container {
+        max-width: 343px;
+        width: 100%;
+
+        .logo_container {
+          img {
+            width: 140px;
+            height: auto;
+          }
+        }
+
+        .btn_primary {
+          margin-top: 48px;
+          padding: 15px 20px;
+          padding-bottom: 16px;
+          font-weight: 500;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
