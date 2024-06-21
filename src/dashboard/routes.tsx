@@ -1,6 +1,7 @@
 import { Switch, Route, Redirect } from "react-router-dom";
 
 import HomePage from "./home";
+import MyAccountPage from "./my-account";
 
 const dummyPage = () => {
   return <>Empty Page</>;
@@ -11,20 +12,80 @@ type NavRouteProps = {
   label: string;
   to?: string | null;
   component?: () => JSX.Element;
+  unlist?: boolean;
 }[];
 
 export const navRoutes: NavRouteProps = [
   {
-    icon: "data",
+    icon: "history",
     label: "Home",
     to: "/home",
     component: HomePage,
   },
   {
-    icon: "request",
-    label: "Jobs",
-    to: "/jobs",
+    icon: "document",
+    label: "Available Listings",
+    to: "/all-listings",
     component: dummyPage,
+  },
+  {
+    icon: "document",
+    label: "Information | Available Listings",
+    to: "/all-listings/:id",
+    component: dummyPage,
+    unlist: true,
+  },
+  {
+    icon: "document",
+    label: "My Listings",
+    to: "/my-lisings",
+    component: dummyPage,
+  },
+  {
+    icon: "document",
+    label: "Information | My Listings",
+    to: "/my-lisings/:id",
+    component: dummyPage,
+    unlist: true,
+  },
+  {
+    icon: "data",
+    label: "My Requested Services",
+    to: "/my-requested-services",
+    component: dummyPage,
+  },
+  {
+    icon: "data",
+    label: "Information | My Requested Services",
+    to: "/my-requested-services/:id",
+    component: dummyPage,
+    unlist: true,
+  },
+  {
+    icon: "request",
+    label: "My Bids",
+    to: "/my-bids",
+    component: dummyPage,
+  },
+  {
+    icon: "request",
+    label: "Information | My Bids",
+    to: "/my-bids/:id",
+    component: dummyPage,
+    unlist: true,
+  },
+  {
+    icon: "data",
+    label: "My Awarded Gigs",
+    to: "/my-awarded-gigs",
+    component: dummyPage,
+  },
+  {
+    icon: "data",
+    label: "Information | My Awarded Gigs",
+    to: "/my-awarded-gigs/:id",
+    component: dummyPage,
+    unlist: true,
   },
   {
     icon: "notification",
@@ -33,15 +94,15 @@ export const navRoutes: NavRouteProps = [
     component: dummyPage,
   },
   {
+    icon: "identification",
+    label: "My Account",
+    to: "/my-account",
+    component: MyAccountPage,
+  },
+  {
     icon: "help",
     label: "Help",
     to: "/help",
-    component: dummyPage,
-  },
-  {
-    icon: "settings",
-    label: "Settings",
-    to: "/settings",
     component: dummyPage,
   },
 ];

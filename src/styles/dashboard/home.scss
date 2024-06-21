@@ -1,5 +1,5 @@
 .homepage_container {
-  padding: 48px 24px;
+  padding: 30px 32px 48px 32px;
   width: 100%;
   min-height: 89vh;
   background: $color-white;
@@ -7,5 +7,103 @@
   @include smScreen {
     padding-left: 12px;
     padding-right: 12px;
+  }
+
+  .analytics {
+    &.last {
+      margin-top: 30px;
+    }
+
+    .section_title {
+      margin-bottom: 12px;
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+
+    .list {
+      @include gridColumns(repeat(6, 1fr), 18px);
+
+      @media (max-width: 1580px) {
+        @include gridColumns(repeat(4, 1fr), 18px);
+      }
+
+      @media (max-width: 1150px) {
+        @include gridColumns(repeat(3, 1fr), 12px);
+      }
+
+      @media (max-width: 930px) {
+        @include gridColumns(repeat(2, 1fr), 12px);
+      }
+
+      .item {
+        padding: 18px;
+        background: $color-blue-02;
+        border-radius: 12px;
+
+        h6 {
+          margin-bottom: 2px;
+          font-size: 1.8em;
+          font-weight: bold;
+
+          @include xsScreen {
+            font-size: 1.5em;
+          }
+        }
+
+        p {
+          font-size: 1em;
+          font-weight: 500;
+
+          @include xsScreen {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+  }
+
+  .actions {
+    margin-top: 60px;
+
+    .section_title {
+      margin-bottom: 12px;
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+
+    .list {
+      @include gridColumns(repeat(4, 1fr), 18px);
+
+      @media (max-width: 1400px) {
+        @include gridColumns(repeat(3, 1fr), 12px);
+      }
+
+      @media (max-width: 1130px) {
+        @include gridColumns(repeat(2, 1fr), 12px);
+      }
+
+      @media (max-width: 580px) {
+        @include gridColumns(1fr, 12px);
+      }
+
+      .item {
+        @include flexPosition(space-between, center);
+        gap: 12px;
+        padding: 14px 18px;
+        padding-right: 10px;
+        border: 1px dashed $color-grey-04;
+        border-radius: 12px;
+        cursor: pointer;
+
+        p {
+          font-size: 1em;
+          font-weight: 500;
+
+          @include xsScreen {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
   }
 }

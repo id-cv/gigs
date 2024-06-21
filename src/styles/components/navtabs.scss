@@ -1,0 +1,39 @@
+.nav-tabs {
+  @include flexPosition(flex-start, flex-start);
+  gap: 38px;
+  flex-wrap: nowrap;
+  width: 100%;
+  border-bottom: 1px solid $color-grey-01;
+
+  @media screen and (max-width: 1250px) {
+    width: 935px;
+  }
+
+  .nav-item {
+    width: auto;
+
+    .nav-link {
+      display: block;
+      padding: 0;
+      padding-bottom: 7px;
+      font-size: 1em;
+      color: $color-black-03;
+      border: none;
+      border-bottom: 3px solid transparent;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-gradient-01;
+        border: none;
+        border-bottom: 3px solid $color-gradient-01;
+      }
+
+      &.active {
+        font-weight: 500;
+        color: $color-gradient-01;
+        background: transparent;
+        border-bottom: 3px solid $color-gradient-01;
+      }
+    }
+  }
+}

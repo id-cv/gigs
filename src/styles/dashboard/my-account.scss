@@ -1,0 +1,35 @@
+.my_account_page_container {
+  padding: 30px 32px 48px 32px;
+  width: 100%;
+  min-height: 89vh;
+  background: $color-white;
+
+  @include smScreen {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .content_container {
+    padding-top: 24px;
+    min-height: calc(100vh - 240px);
+    width: 100%;
+    max-width: 420px;
+
+    @include smScreen {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    .loader_img_container {
+      margin: 135px auto;
+
+      .loader_img {
+        width: 30px;
+      }
+    }
+
+    &.transactions_container {
+      margin: 0;
+    }
+  }
+}

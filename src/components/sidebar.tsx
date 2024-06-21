@@ -32,6 +32,8 @@ const Sidebar = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const allRoutes = navRoutes?.filter((x) => x?.unlist !== true);
+
   return (
     <div
       className={classNames("sidebar_container", {
@@ -62,8 +64,13 @@ const Sidebar = () => {
         </div>
 
         <div className="links">
-          {navRoutes?.map((item, i) => (
-            <NavLink to={item.to || ""} key={i} className="link">
+          {allRoutes?.map((item, i) => (
+            <NavLink
+              to={item.to || ""}
+              key={i}
+              className="link"
+              onClick={handleSidebarClose}
+            >
               <div className="icon">
                 <Icon name={item.icon} />
               </div>

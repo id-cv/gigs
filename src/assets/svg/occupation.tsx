@@ -494,10 +494,10 @@ export const Occupation = () => (
         y2="30"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-opacity="0" />
+        <stop stopOpacity="0" />
         <stop offset="0.04" />
         <stop offset="0.96" />
-        <stop offset="1" stop-opacity="0" />
+        <stop offset="1" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_3_2127"
@@ -507,10 +507,10 @@ export const Occupation = () => (
         y2="30"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-opacity="0" />
+        <stop stopOpacity="0" />
         <stop offset="0.04" />
         <stop offset="0.96" />
-        <stop offset="1" stop-opacity="0" />
+        <stop offset="1" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint2_linear_3_2127"
@@ -520,10 +520,10 @@ export const Occupation = () => (
         y2="30"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-opacity="0" />
+        <stop stopOpacity="0" />
         <stop offset="0.04" />
         <stop offset="0.96" />
-        <stop offset="1" stop-opacity="0" />
+        <stop offset="1" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint3_linear_3_2127"
@@ -533,10 +533,10 @@ export const Occupation = () => (
         y2="30"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-opacity="0" />
+        <stop stopOpacity="0" />
         <stop offset="0.04" />
         <stop offset="0.96" />
-        <stop offset="1" stop-opacity="0" />
+        <stop offset="1" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint4_linear_3_2127"
@@ -546,10 +546,10 @@ export const Occupation = () => (
         y2="30"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-opacity="0" />
+        <stop stopOpacity="0" />
         <stop offset="0.04" />
         <stop offset="0.96" />
-        <stop offset="1" stop-opacity="0" />
+        <stop offset="1" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint5_linear_3_2127"
@@ -559,10 +559,10 @@ export const Occupation = () => (
         y2="30"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-opacity="0" />
+        <stop stopOpacity="0" />
         <stop offset="0.04" />
         <stop offset="0.96" />
-        <stop offset="1" stop-opacity="0" />
+        <stop offset="1" stopOpacity="0" />
       </linearGradient>
     </defs>
   </svg>

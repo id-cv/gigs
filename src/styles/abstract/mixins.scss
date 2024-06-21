@@ -120,7 +120,7 @@
 }
 
 @mixin xsScreen() {
-  @media (max-width: 320px) {
+  @media (max-width: 370px) {
     @content;
   }
 }

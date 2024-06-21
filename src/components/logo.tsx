@@ -10,7 +10,7 @@ const Logo = ({ colored }: { colored?: boolean }) => (
       src={colored ? LogoColored : LogoDefault}
       alt={`${APP_NAME} logo`}
     />
-    <p className={`${colored ? "colored" : ""}`}>Jobs</p>
+    <p className={`${colored ? "colored" : ""}`}>GIGs</p>
   </div>
 );
 

@@ -40,7 +40,7 @@ export const logoutUser = () => {
 
 export const getRequestError = (error: any) => {
   const { response } = error;
-  
+
   if (response && typeof response.data === "string") {
     return response.data;
   } else if (response && response.data.error) {
@@ -50,22 +50,24 @@ export const getRequestError = (error: any) => {
 };
 
 export const socialOnClick = (social: { name: string; handle: string }) => {
-  switch(social.name) {
+  switch (social.name) {
     case "whatsapp":
-      window.open(`https://api.whatsapp.com/send?phone=${social.handle}&text=Hello! I'm a website visitor.`);
-      break
+      window.open(
+        `https://api.whatsapp.com/send?phone=${social.handle}&text=Hello! I'm a website visitor.`
+      );
+      break;
     case "twitter":
       window.open(`https://x.com/${social.handle}`);
-      break
+      break;
     case "instagram":
       window.open(`https://www.instagram.com/${social.handle}`);
-      break
+      break;
     case "facebook":
       window.open(`https://facebook.com/${social.handle}`);
-      break
+      break;
     case "tiktok":
       window.open(`https://www.tiktok.com/${social.handle}`);
-      break
+      break;
     default:
       return;
   }
@@ -76,3 +78,16 @@ export const firstLetter = (letter: string) => {
   var res = str?.substring(0, 1);
   return res;
 };
+
+export const formatNumber = (n: number, decimals?: number) => {
+  return (
+    n &&
+    Number(n)
+      .toFixed(decimals || 0)
+      .replace(/./g, function (c, i, a) {
+        return i > 0 && c !== "." && (a.length - i) % 3 === 0 ? "," + c : c;
+      })
+  );
+};
+
+export type AnyObject = { [key: string]: any };
