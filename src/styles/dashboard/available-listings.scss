@@ -1,0 +1,152 @@
+.available_listings_container {
+  padding: 30px 32px 48px 32px;
+  width: 100%;
+  min-height: 89vh;
+  background: $color-white;
+
+  @include smScreen {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .page_header_container {
+    padding-bottom: 32px;
+    border-bottom: 1px solid $color-grey-00;
+
+    .actions {
+      @include flexPosition(flex-end, center);
+      gap: 12px;
+    }
+  }
+
+  .listings {
+    margin: auto;
+    margin-top: 28px;
+    max-width: 500px;
+
+    .item {
+      display: block;
+      padding: 18px;
+      width: 100%;
+      border-bottom: 1px solid $color-grey-02;
+
+      @include xsScreen {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      .tag {
+        padding: 2px 7px;
+        font-size: 0.7em;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        width: fit-content;
+        border-radius: 3px;
+        color: $color-white;
+        background: $color-primary;
+
+        &.gig {
+          background: linear-gradient($color-gradient-01, $color-gradient-02);
+        }
+      }
+
+      .title {
+        margin-top: 4px;
+        font-weight: 600;
+        background: linear-gradient($color-gradient-01, $color-gradient-02);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .client_name {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        font-size: 0.9em;
+        font-weight: 500;
+        color: $color-primary;
+      }
+
+      .text {
+        margin-top: 4px;
+        font-size: 0.95em;
+
+        span {
+          font-weight: 500;
+        }
+
+        &.skills {
+          @include flexPosition(flex-start, flex-start);
+          flex-wrap: wrap;
+
+          span {
+            margin-right: 4px;
+
+            &:first-child {
+              margin-left: 4px;
+            }
+          }
+        }
+      }
+
+      .posted {
+        margin-top: 10px;
+        font-size: 0.85em;
+        font-style: italic;
+        color: $color-black-03;
+      }
+    }
+  }
+}
+
+.listing_info_page_container {
+  .new_listing_form {
+    margin: auto;
+    margin-top: 28px;
+    max-width: 500px;
+
+    .actions {
+      @include flexPosition(space-between, center);
+      gap: 12px;
+      margin-top: 42px;
+    }
+  }
+
+  .listing_info {
+    margin: auto;
+    margin-top: 28px;
+    max-width: 500px;
+
+    .posted {
+      font-size: 0.9em;
+      font-style: italic;
+      color: $color-black-03;
+    }
+
+    .text {
+      margin-top: 24px;
+      font-size: 1.05em;
+
+      span {
+        font-weight: 500;
+      }
+
+      &.skills {
+        @include flexPosition(flex-start, flex-start);
+        flex-wrap: wrap;
+
+        span {
+          margin-right: 4px;
+
+          &:first-child {
+            margin-left: 4px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -10,6 +10,7 @@ type Props = {
   selectRef?: any;
   onChange?: any;
   readOnly?: any;
+  isMulti?: boolean;
   options: any;
   errorMessage?: any;
 };
@@ -23,6 +24,7 @@ const FormSelect = ({
   selectRef,
   onChange,
   readOnly,
+  isMulti,
   options,
   errorMessage,
   ...rest
@@ -56,6 +58,7 @@ const FormSelect = ({
           onChange={onChange}
           isDisabled={readOnly}
           placeholder={placeholder}
+          isMulti={isMulti}
           {...rest}
         />
       </div>

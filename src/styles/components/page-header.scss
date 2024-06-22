@@ -1,0 +1,18 @@
+.page_header_container {
+  @include flexPosition(space-between, flex-end);
+  gap: 12px;
+  margin: 0;
+
+  .info {
+    h6 {
+      font-size: 2em;
+    }
+
+    p {
+      margin-top: 7px;
+      font-size: 1em;
+      font-weight: 500;
+      max-width: 300px;
+    }
+  }
+}

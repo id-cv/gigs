@@ -39,7 +39,7 @@ const HomePage = () => {
     },
     {
       label: "List a Gig/Service",
-      onClick: () => history.push("/my-lisings"),
+      onClick: () => history.push("/my-listings"),
     },
   ];
 

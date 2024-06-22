@@ -1,6 +1,9 @@
 import { Switch, Route, Redirect } from "react-router-dom";
 
 import HomePage from "./home";
+import AvailableListings from "./available-listings";
+import MyListings from "./my-listings";
+import ListingInformationPage from "./my-listings/listing-info";
 import MyAccountPage from "./my-account";
 
 const dummyPage = () => {
@@ -26,26 +29,26 @@ export const navRoutes: NavRouteProps = [
     icon: "document",
     label: "Available Listings",
     to: "/all-listings",
-    component: dummyPage,
+    component: AvailableListings,
   },
   {
     icon: "document",
     label: "Information | Available Listings",
     to: "/all-listings/:id",
-    component: dummyPage,
+    component: ListingInformationPage,
     unlist: true,
   },
   {
     icon: "document",
     label: "My Listings",
-    to: "/my-lisings",
-    component: dummyPage,
+    to: "/my-listings",
+    component: MyListings,
   },
   {
     icon: "document",
     label: "Information | My Listings",
-    to: "/my-lisings/:id",
-    component: dummyPage,
+    to: "/my-listings/:id",
+    component: ListingInformationPage,
     unlist: true,
   },
   {

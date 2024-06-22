@@ -1,5 +1,5 @@
 export const APP_NAME =
-  "ID.CV Jobs | Find the Perfect Talent or Service for Your Project";
+  "ID.CV Gigs | Find the Perfect Talent or Service for Your Project";
 
 export const APP_USER = "idcv_app_user";
 

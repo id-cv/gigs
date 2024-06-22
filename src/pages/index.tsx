@@ -53,7 +53,7 @@ const HomePage = () => {
           <Link to="/register" className="btn_primary">
             Get Started
           </Link>
-          <p className="free_and_paid">Join ID.CV Jobs today</p>
+          <p className="free_and_paid">Join ID.CV Gigs today</p>
         </div>
       </div>
 

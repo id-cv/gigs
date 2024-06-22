@@ -10,11 +10,13 @@
 @import "./components/loader.scss";
 @import "./components/logo.scss";
 @import "./components/navtabs.scss";
+@import "./components/page-header.scss";
 @import "./components/sidebar.scss";
 @import "./components/top-bar.scss";
 
+@import "./dashboard/available-listings.scss";
 @import "./dashboard/home.scss";
-@import "./dashboard//my-account.scss";
+@import "./dashboard/my-account.scss";
 
 @import "./pages/home.scss";
 @import "./pages/register.scss";
