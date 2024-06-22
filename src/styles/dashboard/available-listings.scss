@@ -13,9 +13,17 @@
     padding-bottom: 32px;
     border-bottom: 1px solid $color-grey-00;
 
+    @include mmdScreen {
+      display: block;
+    }
+
     .actions {
       @include flexPosition(flex-end, center);
       gap: 12px;
+
+      @include mmdScreen {
+        margin-top: 16px;
+      }
     }
   }
 
