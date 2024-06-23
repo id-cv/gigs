@@ -43,7 +43,7 @@ const HomePage = () => {
         </div>
 
         <div className="hero_content">
-          <p className="built">BUILT WITH LOVE AT ETHGLOBAL 🖤</p>
+          <p className="built">BUILT WITH LOVE AT STARKHACK 🖤</p>
           <h1>Find the perfect talent or service for your project</h1>
           <p className="sub_title">
             Connecting businesses with top professionals worldwide. Secure
